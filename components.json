@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "tailwind.config.ts",
+    "css": "app/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@career-canvas/components",
+    "utils": "@career-canvas/lib/utils",
+    "ui": "@career-canvas/components/ui",
+    "lib": "@career-canvas/lib",
+    "hooks": "@career-canvas/hooks"
+  },
+  "iconLibrary": "lucide"
+}
