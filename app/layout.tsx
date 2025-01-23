@@ -3,7 +3,11 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 
-const inter = Inter();
+const inter = Inter({
+subsets:['latin'],
+preload: false,
+});
+
 
 export const metadata: Metadata = {
   title: "Career Canvas | Home",
