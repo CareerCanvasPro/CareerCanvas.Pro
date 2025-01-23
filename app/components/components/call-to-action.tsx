@@ -1,4 +1,5 @@
 import { FaApple, FaGooglePlay } from "react-icons/fa";
+
 import { Button } from "@career-canvas/components/ui/button";
 
 export function CallToActionComponent() {

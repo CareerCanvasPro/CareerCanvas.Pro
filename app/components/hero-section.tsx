@@ -1,12 +1,14 @@
-import { Button } from "@career-canvas/components/ui/button";
-import { CareerCanvasLogo } from "@career-canvas/components/logos/career-canvas";
 import Link from "next/link";
-import { SocialLinksComponent } from "./components/social-links";
+
+import { CareerCanvasLogo } from "@career-canvas/components/logos/career-canvas";
+import { Button } from "@career-canvas/components/ui/button";
+
 import { CallToActionComponent } from "./components/call-to-action";
+import { SocialLinksComponent } from "./components/social-links";
 
 export function HeroSectionComponent() {
   return (
-    <div className="flex flex-col gap-8 bg-gradient-to-r from-white from-10% via-canvas-blue-1 via-70% to-canvas-blue-2 to-90% text-canvas-blue-2 h-screen p-8">
+    <div className="flex h-screen flex-col gap-8 bg-gradient-to-r from-white from-10% via-canvas-blue-1 via-70% to-canvas-blue-2 to-90% p-8 text-canvas-blue-2">
       <div className="flex justify-between">
         <CareerCanvasLogo />
         <nav>
@@ -22,11 +24,11 @@ export function HeroSectionComponent() {
           </Button>
         </nav>
       </div>
-      <div className="w-1/2 flex flex-col gap-8 items-center">
-        <h1 className="font-black text-6xl text-center">
+      <div className="flex w-1/2 flex-col items-center gap-8">
+        <h1 className="text-center text-6xl font-black">
           Unlock Your Future: Empowering Students to Build Global Careers
         </h1>
-        <h2 className="font-black text-xl text-center">
+        <h2 className="text-center text-xl font-black">
           Start your journey towards success with personalized career guidance,
           skill mapping, psychometric insights, and access to global
           opportunities — all tailored for students, including those from

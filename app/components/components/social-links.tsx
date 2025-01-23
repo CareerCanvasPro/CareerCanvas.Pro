@@ -5,6 +5,7 @@ import {
   FaFacebook,
   FaYoutube,
 } from "react-icons/fa";
+
 import { Button } from "@career-canvas/components/ui/button";
 
 export function SocialLinksComponent() {
