@@ -27,9 +27,9 @@ jobs:
       - name: Build Next.js
         run: npm run build
 
-      # Step 5: Export static files
-      # - name: Export static files
-       run: npx next export
+      # Uncomment and modify the export step
+      - name: Export static files
+        run: npm run export
 
       # Step 6: Configure AWS Credentials (Official Action)
       - name: Configure AWS credentials
