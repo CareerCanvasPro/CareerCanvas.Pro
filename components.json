@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
-  "style": "new-york",
+  "style": "default",
   "rsc": true,
   "tsx": true,
   "tailwind": {
@@ -11,11 +11,10 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "@career-canvas/components",
-    "utils": "@career-canvas/lib/utils",
-    "ui": "@career-canvas/components/ui",
-    "lib": "@career-canvas/lib",
-    "hooks": "@career-canvas/hooks"
-  },
-  "iconLibrary": "lucide"
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  }
 }
