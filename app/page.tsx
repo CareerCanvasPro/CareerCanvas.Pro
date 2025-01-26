@@ -225,8 +225,8 @@ export default function Home() {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="interactive-hover text-white border-white hover:bg-white/10"
+                variant="secondary" 
+                className="interactive-hover bg-[#FFA07A] hover:bg-[#FFA07A]/90"
               >
                 Contact Us
               </Button>
