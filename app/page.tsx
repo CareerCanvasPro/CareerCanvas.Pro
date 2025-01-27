@@ -9,7 +9,7 @@ const events = [
     date: "15-2-2025",
     time: "9:00 AM - 12:30 AM",
     location: "In-Place",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80",
+    image: "https://i.postimg.cc/15wsWqKp/event-banner.jpg",
     category: "Technology"
   }
 ];

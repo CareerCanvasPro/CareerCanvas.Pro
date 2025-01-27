@@ -29,7 +29,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">
-              About <span className="text-gradient">Career Canvas</span>
+              About <span className="text-gradient">CareerCanvas</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We're on a mission to make education accessible, engaging, and effective for everyone through innovative technology.

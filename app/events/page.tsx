@@ -8,7 +8,7 @@ const events = [
     date: "2024-04-15",
     time: "10:00 AM - 12:00 PM",
     location: "Virtual",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80",
+    image: "https://i.postimg.cc/15wsWqKp/event-banner.jpg",
     category: "Technology"
   },
 ];

@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { GraduationCap } from "lucide-react";
 import { useState, useEffect } from "react";
-
+import Image from 'next/image';
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -32,8 +32,8 @@ export function Navigation() {
             onClick={() => scrollToSection('home')}
             className="flex items-center space-x-2 hover-scale"
           >
-            <GraduationCap className="h-8 w-8 text-[#0052CC]" />
-            <span className="font-bold text-xl text-gradient">CareerCanvas</span>
+            <Image src="https://i.postimg.cc/Sx1xzz7C/logo-bg-ts.png" alt="Logo" width={50} height={50} />
+            <span className="font-bold text-xl text-gradient">Career Canvas</span>
           </button>
           
           <div className="hidden md:flex items-center space-x-8">
