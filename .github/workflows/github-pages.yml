@@ -24,17 +24,20 @@ jobs:
         working-directory: ./app
         run: |
           npm run build
-          pwd
+          echo "Current directory contents:"
           ls -la
-          ls -la .next/
+          echo "Parent directory contents:"
           ls -la ../
+          echo "Public directory contents:"
+          ls -la public/
       - name: Copy well-known files
         working-directory: ./app
         run: |
-          ls -la
+          echo "Checking if out directory exists:"
+          ls -la out/ || mkdir -p out/
           mkdir -p out/.well-known
           cp -r public/.well-known/* out/.well-known/
-          echo "Content of out directory after copy:"
+          echo "Final out directory contents:"
           ls -la out/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
