@@ -33,7 +33,8 @@ jobs:
       - name: Copy well-known files
         working-directory: ./app
         run: |
-          echo "Copying files from parent out directory:"
+          echo "Creating directories and copying files:"
+          mkdir -p out
           cp -r ../out/* out/
           mkdir -p out/.well-known
           cp -r public/.well-known/* out/.well-known/
