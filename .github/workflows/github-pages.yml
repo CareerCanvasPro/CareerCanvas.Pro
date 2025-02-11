@@ -24,12 +24,14 @@ jobs:
         working-directory: ./app
         run: |
           npm run build
-          ls -la out/
+          pwd
+          ls -la
       - name: Copy well-known files
         working-directory: ./app
         run: |
-          cp -r public/.well-known out/
-          ls -la out/.well-known/
+          mkdir -p out/.well-known
+          cp -r public/.well-known/* out/.well-known/
+          ls -la out/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
