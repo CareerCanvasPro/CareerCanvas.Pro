@@ -22,10 +22,14 @@ jobs:
         run: npm install
       - name: Build
         working-directory: ./app
-        run: npm run build
+        run: |
+          npm run build
+          ls -la out/
       - name: Copy well-known files
         working-directory: ./app
-        run: cp -r public/.well-known out/
+        run: |
+          cp -r public/.well-known out/
+          ls -la out/.well-known/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
