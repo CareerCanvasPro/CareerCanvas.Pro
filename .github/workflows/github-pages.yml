@@ -26,14 +26,16 @@ jobs:
           npm run build
           pwd
           ls -la
-          tree out/
+          ls -la .next/
+          ls -la ../
       - name: Copy well-known files
         working-directory: ./app
         run: |
+          ls -la
           mkdir -p out/.well-known
           cp -r public/.well-known/* out/.well-known/
-          echo "Content of out directory:"
-          tree out/
+          echo "Content of out directory after copy:"
+          ls -la out/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
