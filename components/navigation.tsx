@@ -35,7 +35,7 @@ export function Navigation() {
             className="flex items-center space-x-2 hover-scale"
           >
             <Image
-              src="app/pbulic/images/logo.png"
+              src="./app/public/images/logo.png"
               alt="Logo"
               width={50}
               height={50}
