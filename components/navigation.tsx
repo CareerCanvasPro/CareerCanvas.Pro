@@ -34,7 +34,12 @@ export function Navigation() {
             onClick={() => scrollToSection("home")}
             className="flex items-center space-x-2 hover-scale"
           >
-            <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
+            <Image
+              src="app/pbulic/images/logo.png"
+              alt="Logo"
+              width={50}
+              height={50}
+            />
             <span className="font-bold text-xl text-gradient">
               Career Canvas
             </span>
