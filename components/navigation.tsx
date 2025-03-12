@@ -64,6 +64,13 @@ export function Navigation() {
             >
               About Us
             </button>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="text-gradient hover-scale"
+            >
+              Contact
+            </button>
+            <a href="/pp.html" className="text-gradient hover-scale px-4 py-2">Privacy Policy</a>
             <Button className="bg-[#0052CC] hover:bg-[#3CB371] transition-colors">
               Download App
             </Button>
