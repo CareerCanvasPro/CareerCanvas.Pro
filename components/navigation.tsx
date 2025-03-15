@@ -34,12 +34,7 @@ export function Navigation() {
             onClick={() => scrollToSection("home")}
             className="flex items-center space-x-2 hover-scale"
           >
-            <Image 
-              src="/images/logo.png" 
-              alt="Logo" 
-              width={50} 
-              height={50} 
-            />
+            <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
             <span className="font-bold text-xl text-gradient">
               Career Canvas
             </span>
@@ -70,8 +65,17 @@ export function Navigation() {
             >
               Contact
             </button>
-            <Button className="bg-[#0052CC] hover:bg-[#3CB371] transition-colors">
-              Download App
+            <Button
+              className="bg-[#0052CC] hover:bg-[#3CB371] transition-colors"
+              asChild
+            >
+              <a
+                href="https://play.google.com/store/apps/details?id=pro.careercanvas.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download App
+              </a>
             </Button>
           </div>
         </div>

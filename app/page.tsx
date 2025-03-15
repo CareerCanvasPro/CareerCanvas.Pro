@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -34,15 +33,8 @@ const events = [
   },
 ];
 
-
 // App screenshots for slider
-const screenshots = [
-  "/images/ss.png",
-  "/images/OIP.jpg",
-  "/images/ok.jpg",
-
-];
-
+const screenshots = ["/images/ss.png", "/images/OIP.jpg", "/images/ok.jpg"];
 
 export default function Home() {
   const [index, setIndex] = useState(0);
@@ -91,7 +83,6 @@ export default function Home() {
         className="min-h-screen flex items-center pt-16 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#0052CC]/5 to-[#3CB371]/5"
       >
         <div className="max-w-7xl mx-auto w-full">
-
           {/* Right - Auto-Rotating Image Slider */}
           <div className="relative h-[400px] sm:h-[500px] w-full flex items-center justify-center overflow-hidden rounded-[2rem] shadow-2xl mt-8 mb-8">
             <AnimatePresence mode="wait">
@@ -123,7 +114,9 @@ export default function Home() {
 
             {/* Platform Introduction */}
             <p className="text-lg sm:text-xl text-gray-700 mb-8">
-              Explore innovative learning experiences designed to boost your career and empower your education journey. Join thousands of learners in transforming their futures!
+              Explore innovative learning experiences designed to boost your
+              career and empower your education journey. Join thousands of
+              learners in transforming their futures!
             </p>
 
             {/* Call-to-Action Buttons */}
@@ -144,11 +137,6 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          
-
-
-
-
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-fade-in">
@@ -165,8 +153,15 @@ export default function Home() {
                 <Button
                   size="lg"
                   className="interactive-hover bg-[#0052CC] hover:bg-[#3CB371] transition-colors w-full sm:w-auto"
+                  asChild
                 >
-                  <Download className="mr-2 h-5 w-5" /> Download App
+                  <a
+                    href="https://play.google.com/store/apps/details?id=pro.careercanvas.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Download className="mr-2 h-5 w-5" /> Download App
+                  </a>
                 </Button>
                 <Link
                   href="https://www.youtube.com/watch?v=G4BFlIs9j_M"
@@ -194,7 +189,6 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0052CC]/50 to-transparent"></div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -312,93 +306,98 @@ export default function Home() {
         </div>
       </section>
       <section
-      id="benefits"
-      className="min-h-[600px] py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#3CB371]/5 to-[#0052CC]/5"
-    >
-      <div className="max-w-7xl mx-auto">
-        {/* Title */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-gradient mb-12">
-          The Benefits of Joining Career Canvas
-        </h2>
+        id="benefits"
+        className="min-h-[600px] py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#3CB371]/5 to-[#0052CC]/5"
+      >
+        <div className="max-w-7xl mx-auto">
+          {/* Title */}
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gradient mb-12">
+            The Benefits of Joining Career Canvas
+          </h2>
 
-        {/* Feature Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          <Card className="text-center p-8 shadow-xl rounded-lg">
-            <Users className="mx-auto h-12 w-12 text-[#0052CC] mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Vibrant Community</h3>
-            <p className="text-gray-700 mb-4">
-              Join a supportive community of learners and mentors from around the world.
-            </p>
-            <Button
-              variant="outline"
-              className="w-full text-[#0052CC] border-[#0052CC] hover:bg-[#0052CC]/10"
-            >
-              Learn More
-            </Button>
-          </Card>
-          <Card className="text-center p-8 shadow-xl rounded-lg">
-            <Target className="mx-auto h-12 w-12 text-[#3CB371] mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Career-Focused</h3>
-            <p className="text-gray-700 mb-4">
-              Tailored resources to help you reach your career goals and land your dream job.
-            </p>
-            <Button
-              variant="outline"
-              className="w-full text-[#3CB371] border-[#3CB371] hover:bg-[#3CB371]/10"
-            >
-              Learn More
-            </Button>
-          </Card>
-          <Card className="text-center p-8 shadow-xl rounded-lg">
-            <Award className="mx-auto h-12 w-12 text-[#FFA07A] mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Certification</h3>
-            <p className="text-gray-700 mb-4">
-              Earn certificates upon completing courses and showcase your achievements.
-            </p>
-            <Button
-              variant="outline"
-              className="w-full text-[#FFA07A] border-[#FFA07A] hover:bg-[#FFA07A]/10"
-            >
-              Learn More
-            </Button>
-          </Card>
-        </div>
+          {/* Feature Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <Card className="text-center p-8 shadow-xl rounded-lg">
+              <Users className="mx-auto h-12 w-12 text-[#0052CC] mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Vibrant Community</h3>
+              <p className="text-gray-700 mb-4">
+                Join a supportive community of learners and mentors from around
+                the world.
+              </p>
+              <Button
+                variant="outline"
+                className="w-full text-[#0052CC] border-[#0052CC] hover:bg-[#0052CC]/10"
+              >
+                Learn More
+              </Button>
+            </Card>
+            <Card className="text-center p-8 shadow-xl rounded-lg">
+              <Target className="mx-auto h-12 w-12 text-[#3CB371] mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Career-Focused</h3>
+              <p className="text-gray-700 mb-4">
+                Tailored resources to help you reach your career goals and land
+                your dream job.
+              </p>
+              <Button
+                variant="outline"
+                className="w-full text-[#3CB371] border-[#3CB371] hover:bg-[#3CB371]/10"
+              >
+                Learn More
+              </Button>
+            </Card>
+            <Card className="text-center p-8 shadow-xl rounded-lg">
+              <Award className="mx-auto h-12 w-12 text-[#FFA07A] mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Certification</h3>
+              <p className="text-gray-700 mb-4">
+                Earn certificates upon completing courses and showcase your
+                achievements.
+              </p>
+              <Button
+                variant="outline"
+                className="w-full text-[#FFA07A] border-[#FFA07A] hover:bg-[#FFA07A]/10"
+              >
+                Learn More
+              </Button>
+            </Card>
+          </div>
 
-        {/* Success Metrics */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 text-center">
-          <div className="p-6 shadow-lg rounded-lg bg-white">
-            <BarChart2 className="mx-auto h-12 w-12 text-[#0052CC] mb-4" />
-            <h3 className="text-3xl font-bold text-[#0052CC] mb-2">98%</h3>
-            <p className="text-gray-700">Success Rate for Career Placements</p>
-          </div>
-          <div className="p-6 shadow-lg rounded-lg bg-white">
-            <Star className="mx-auto h-12 w-12 text-[#3CB371] mb-4" />
-            <h3 className="text-3xl font-bold text-[#3CB371] mb-2">4.9/5</h3>
-            <p className="text-gray-700">Average Rating from Students</p>
-          </div>
-          <div className="p-6 shadow-lg rounded-lg bg-white">
-            <Users className="mx-auto h-12 w-12 text-[#FFA07A] mb-4" />
-            <h3 className="text-3xl font-bold text-[#FFA07A] mb-2">5000+</h3>
-            <p className="text-gray-700">Active Users Worldwide</p>
-          </div>
-        </div>
-
-        {/* User Testimonials */}
-        <div className="space-y-8">
-          <h3 className="text-2xl font-semibold text-center text-gradient mb-6">
-            What Our Users Say
-          </h3>
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-8 bg-white shadow-lg rounded-lg">
-              <p className="text-gray-700 mb-4">{testimonial.feedback}</p>
-              <p className="text-xl font-semibold">{testimonial.name}</p>
-              <p className="text-gray-500">{testimonial.role}</p>
+          {/* Success Metrics */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 text-center">
+            <div className="p-6 shadow-lg rounded-lg bg-white">
+              <BarChart2 className="mx-auto h-12 w-12 text-[#0052CC] mb-4" />
+              <h3 className="text-3xl font-bold text-[#0052CC] mb-2">98%</h3>
+              <p className="text-gray-700">
+                Success Rate for Career Placements
+              </p>
             </div>
-          ))}
+            <div className="p-6 shadow-lg rounded-lg bg-white">
+              <Star className="mx-auto h-12 w-12 text-[#3CB371] mb-4" />
+              <h3 className="text-3xl font-bold text-[#3CB371] mb-2">4.9/5</h3>
+              <p className="text-gray-700">Average Rating from Students</p>
+            </div>
+            <div className="p-6 shadow-lg rounded-lg bg-white">
+              <Users className="mx-auto h-12 w-12 text-[#FFA07A] mb-4" />
+              <h3 className="text-3xl font-bold text-[#FFA07A] mb-2">5000+</h3>
+              <p className="text-gray-700">Active Users Worldwide</p>
+            </div>
+          </div>
+
+          {/* User Testimonials */}
+          <div className="space-y-8">
+            <h3 className="text-2xl font-semibold text-center text-gradient mb-6">
+              What Our Users Say
+            </h3>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="p-8 bg-white shadow-lg rounded-lg">
+                <p className="text-gray-700 mb-4">{testimonial.feedback}</p>
+                <p className="text-xl font-semibold">{testimonial.name}</p>
+                <p className="text-gray-500">{testimonial.role}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-    
+      </section>
+
       {/* About Section */}
       <section
         id="about"
@@ -466,8 +465,15 @@ export default function Home() {
                 size="lg"
                 variant="secondary"
                 className="interactive-hover bg-[#FFA07A] hover:bg-[#FFA07A]/90"
+                asChild
               >
-                <Download className="mr-2 h-5 w-5" /> Download Now
+                <a
+                  href="https://play.google.com/store/apps/details?id=pro.careercanvas.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Download className="mr-2 h-5 w-5" /> Download Now
+                </a>
               </Button>
               <Button
                 size="lg"
